@@ -1,0 +1,24 @@
+/* Step 6: Define the box class with the specified properties */
+.box {
+  width: 300px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px; /* Top/bottom 10px, left/right 20px */
+  border: 1px solid black;
+  border-radius: 10px;
+  vertical-align: top; /* Keeps inline-block boxes aligned nicely at the top */
+  background-color: #fcfcfc;
+  font-family: Arial, sans-serif;
+}
+
+/* Step 7: Tag selector for dt element */
+dt {
+  font-weight: 500;
+  margin-top: 5px;
+  color: #555;
+}
+
+dd {
+  margin-left: 0;
+  margin-bottom: 10px;
+}

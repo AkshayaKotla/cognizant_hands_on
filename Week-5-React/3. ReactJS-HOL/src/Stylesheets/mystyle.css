@@ -1,0 +1,30 @@
+.score-card {
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.score-card h2 {
+  color: #4CAF50;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+}
+
+.average-box {
+  margin-top: 15px;
+  background-color: #e8f5e9;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px dashed #4CAF50;
+}
+
+.average-box h3 {
+  margin: 0;
+  color: #2e7d32;
+}
