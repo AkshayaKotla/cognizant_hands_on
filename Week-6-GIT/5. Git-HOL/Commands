@@ -1,0 +1,33 @@
+# Git Clean Up and Push to Remote Repository Hands-on Lab
+
+Objective:
+To learn how to verify the repository status, synchronize the local repository with the remote repository, and push the latest changes to GitHub.
+
+Prerequisites:
+Git installed
+GitHub account
+Git Bash
+Existing GitDemo repository
+
+Procedure:
+
+Step 1: Checked whether the main branch was in a clean state.
+Command:
+git status
+
+Step 2: Listed all available local and remote branches.
+Command:
+git branch -a
+
+Step 3: Pulled the latest changes from the remote repository.
+Command:
+git pull origin main
+
+Step 4: Pushed the latest local changes to the remote repository.
+Command:
+git push origin main
+
+Step 5: Opened the GitHub repository in the browser and verified that all the latest commits and files were successfully updated in the remote repository.
+
+Result:
+Successfully verified the repository status, listed all available branches, synchronized the local repository with the remote repository using the pull command, pushed the latest changes to GitHub, and confirmed that the updates were successfully reflected in the remote repository.

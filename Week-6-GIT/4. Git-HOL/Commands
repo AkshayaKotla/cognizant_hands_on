@@ -1,0 +1,124 @@
+# Git Merge Conflict Resolution Hands-on Lab
+
+Objective:
+To learn how to create a merge conflict, resolve the conflict manually, update the .gitignore file, and merge the branch successfully.
+
+Prerequisites:
+Git installed
+GitHub account
+Git Bash
+Notepad++
+Existing GitDemo repository
+
+Procedure:
+
+Step 1: Checked whether the main branch was in a clean state.
+Command:
+git status
+
+Step 2: Created a new branch named GitWork.
+Command:
+git branch GitWork
+
+Step 3: Switched to the GitWork branch.
+Command:
+git switch GitWork
+
+Step 4: Created hello.xml in the GitWork branch.
+Command:
+echo "<message>Hello from GitWork branch</message>" > hello.xml
+
+Step 5: Updated the contents of hello.xml.
+Command:
+echo "<message>Hello updated from GitWork branch</message>" > hello.xml
+
+Step 6: Checked the repository status.
+Command:
+git status
+
+Step 7: Added the file to the staging area.
+Command:
+git add hello.xml
+
+Step 8: Committed the changes in GitWork.
+Command:
+git commit -m "Added hello.xml in GitWork branch"
+
+Step 9: Switched back to the main branch.
+Command:
+git switch main
+
+Step 10: Created hello.xml in the main branch with different content.
+Command:
+echo "<message>Hello from main branch</message>" > hello.xml
+
+Step 11: Added the file to the staging area.
+Command:
+git add hello.xml
+
+Step 12: Committed the changes in the main branch.
+Command:
+git commit -m "Added hello.xml in main branch"
+
+Step 13: Viewed the commit history.
+Command:
+git log --oneline --graph --decorate --all
+
+Step 14: Compared the differences between the branches.
+Command:
+git diff main..GitWork
+
+Step 15: Visual comparison using P4Merge was not performed because P4Merge was not installed.
+
+Step 16: Merged the GitWork branch into the main branch.
+Command:
+git merge GitWork
+
+Step 17: Opened hello.xml and resolved the merge conflict manually by removing the conflict markers and keeping the required content.
+
+Step 18: Added the resolved file to the staging area.
+Command:
+git add hello.xml
+
+Step 19: Committed the resolved merge conflict.
+Command:
+git commit -m "Resolved merge conflict in hello.xml"
+
+Step 20: Updated the .gitignore file to ignore backup files.
+Command:
+notepad++ .gitignore
+
+Added the following entry:
+*.orig
+
+Step 21: Added the updated .gitignore file.
+Command:
+git add .gitignore
+
+Step 22: Committed the updated .gitignore file.
+Command:
+git commit -m "Updated gitignore for backup files"
+
+Step 23: Listed all available branches.
+Command:
+git branch -a
+
+Step 24: Deleted the merged branch.
+Command:
+git branch -d GitWork
+
+Step 25: Viewed the final commit history.
+Command:
+git log --oneline --graph --decorate
+
+Step 26: Checked the repository status.
+Command:
+git status
+
+Step 27: Pushed the latest changes to the GitHub repository.
+Command:
+git push
+
+Result:
+Successfully created a merge conflict, resolved the conflict manually, updated the .gitignore file to ignore backup files, merged the branch into the main branch, deleted the merged branch, verified the repository status, and pushed the final changes to the GitHub repository successfully.
+

@@ -1,0 +1,73 @@
+# Git Hands-On Lab
+
+Objective
+The objective of this hands-on is to learn the basic Git commands such as git init, git status, git add, git commit, git push and git pull. It also helps in understanding how to create a local repository and connect it with a remote GitHub repository.
+
+Software Used:
+Git Bash
+GitHub
+Notepad++
+
+Procedure:
+
+1. First I checked whether Git was installed on my system.
+Command:
+git --version
+
+2. Then I configured my Git username and email.
+Commands:
+git config --global user.name "Hema Sree"
+git config --global user.email "hemasreedangeti@gmail.com"
+To verify the configuration:
+git config --global --list
+
+3. Installed Notepad++ and configured it as the default Git editor.
+Commands:
+"/c/Program Files/Notepad++/notepad++.exe"
+git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+git config --global core.editor
+
+4. Created a new project folder named GitDemo.
+Commands:
+cd OneDrive
+cd Desktop
+mkdir GitDemo
+cd GitDemo
+git init
+ls -la
+
+5. Created a text file named welcome.txt.
+Command:
+echo "Welcome to Git Hands-On Lab" > welcome.txt
+To verify the file:
+ls
+To display the contents:
+cat welcome.txt
+Checked the repository status:
+git status
+
+6. Added the file to the staging area.
+Command:
+git add welcome.txt
+Checked the status again.
+Command:
+git status
+
+7. Committed the file to the local repository.
+Command:
+git commit
+Commit message used:
+Added welcome.txt file
+
+8. Connected the local repository with the GitHub repository.
+Commands:
+git remote add origin https://github.com/hemasreedangeti/GitDemo.git
+git remote -v
+git branch -M main
+
+9. Pushed the local repository to GitHub.
+Command:
+git push -u origin main
+
+Result:
+Successfully configured Git, created a local repository, added a file, committed the changes, connected the local repository to GitHub and pushed the project successfully.

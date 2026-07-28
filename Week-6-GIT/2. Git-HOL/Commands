@@ -1,0 +1,66 @@
+# Git Ignore Hands-On Lab
+
+Objective:
+The objective of this hands-on is to understand the use of .gitignore file and learn how to ignore unwanted files and folders from being tracked by Git.
+
+Software Used:
+Git Bash
+GitHub
+Notepad++
+
+Procedure:
+
+1. Opened the existing Git repository.
+Commands:
+cd OneDrive
+cd Desktop
+cd GitDemo
+
+2. Created a sample log file.
+Command:
+echo "This is a sample log file" > sample.log
+
+3. Created a log folder.
+Command:
+mkdir log
+
+4. Created a .gitignore file.
+Command:
+touch .gitignore
+
+5. Opened the .gitignore file using Notepad.
+Command:
+notepad .gitignore
+Added the following lines in the .gitignore file.
+
+*.log
+log/
+
+Saved the file and closed Notepad.
+
+6. Checked the repository status.
+Command:
+git status
+Verified that sample.log and log folder were ignored and only .gitignore was shown as an untracked file.
+
+7. Added the .gitignore file to the staging area.
+Command:
+git add .gitignore
+
+8. Checked the status again.
+Command:
+git status
+
+9. Committed the changes.
+Command:
+git commit
+
+Commit Message:
+Added .gitignore file
+
+10. Pushed the changes to GitHub.
+Command:
+git push
+
+Result:
+Successfully created a .gitignore file to ignore .log files and log folders. Verified using git status that the ignored files were not tracked by Git and pushed the changes successfully to GitHub.

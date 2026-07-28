@@ -1,0 +1,83 @@
+# Git Branching and Merging Hands-on Lab
+
+Objective:
+To learn how to create a branch, switch between branches, make changes in a branch, merge the branch into the main branch, view commit history, and delete the merged branch.
+
+Prerequisites:
+Git installed
+GitHub account
+Git Bash
+Local Git repository
+
+Procedure
+
+Step 1: Checked the current branch.
+Command:
+git branch
+
+Step 2: Created a new branch named GitNewBranch.
+Command:
+git branch GitNewBranch
+
+Step 3: Listed all local branches and verified the current branch.
+Command:
+git branch
+
+Step 4: Switched to the new branch.
+Command:
+git switch GitNewBranch
+
+Step 5: Created a new file in the branch.
+Command:
+echo "This file was created in GitNewBranch" > branchfile.txt
+
+Step 6: Added the file to the staging area.
+Command:
+git add branchfile.txt
+
+Step 7: Committed the changes.
+Command:
+git commit -m "Added branch file"
+
+Step 8: Checked the repository status.
+Command:
+git status
+
+Step 9: Switched back to the main branch.
+Command:
+git switch main
+
+Step 10: Listed all available branches.
+Command:
+git branch
+
+Step 11: Compared the differences between the main branch and GitNewBranch.
+Command:
+git diff main..GitNewBranch
+
+Step 12: Visual comparison using P4Merge was not performed because P4Merge was not installed.
+
+Step 13: Merged GitNewBranch into the main branch.
+Command:
+git merge GitNewBranch
+
+Step 14: Viewed the commit history in graphical format.
+Command:
+git log --oneline --graph --decorate
+
+Step 15: Deleted the merged branch.
+Command:
+git branch -d GitNewBranch
+
+Step 16: Checked the repository status.
+Command:
+git status
+
+Step 17: Pushed the latest changes to the GitHub repository.
+Command:
+git push
+
+Result:
+Successfully created a new branch, added and committed changes, switched branches, compared differences, merged the branch into the main branch, viewed the commit history, deleted the merged branch, and pushed the updated repository to GitHub successfully.
+
+
