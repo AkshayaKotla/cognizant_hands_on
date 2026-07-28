@@ -1,0 +1,19 @@
+Scenario 1:
+Expected Output
+
+Discount applied for Customer ID: 101
+Discount applied for Customer ID: 105
+
+Scenario 2:
+Expected Output
+
+VIP status granted to Customer ID: 102
+VIP status granted to Customer ID: 104
+
+Scenario 3:
+Expected Output
+
+Reminder: Loan ID 201 for Customer 101 is due on 10-JUL-26
+Reminder: Loan ID 205 for Customer 104 is due on 15-JUL-26
+
+

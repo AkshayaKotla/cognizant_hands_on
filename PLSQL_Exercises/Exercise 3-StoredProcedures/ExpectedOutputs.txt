@@ -1,0 +1,33 @@
+Scenario 1: ProcessMonthlyInterest
+
+Expected Output:
+PL/SQL procedure successfully completed.
+
+Example:
+Before Balance = 10000
+After Balance = 10100
+
+
+Scenario 2: UpdateEmployeeBonus
+
+Expected Output:
+PL/SQL procedure successfully completed.
+
+Example:
+Before Salary = 50000
+After Salary = 55000
+
+
+Scenario 3: TransferFunds
+
+Expected Output:
+Transfer Successful
+
+Example:
+Account 101 = 5000
+Account 102 = 2000
+
+After Transfer:
+
+Account 101 = 4500
+Account 102 = 2500
